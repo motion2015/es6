@@ -15,3 +15,11 @@ acc = heroes.reduce(function(acc,hero) {
 }, [])
 
 console.log(acc)
+
+let newTT = heroes.filter(i => {
+    if(i.name === 'superman') i.name = 'on'
+    if(i.name === 'Ironman') i.name = 'off'
+    return i
+})
+
+console.log(newTT)
